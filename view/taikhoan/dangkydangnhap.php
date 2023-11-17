@@ -49,7 +49,7 @@
                                                     <input type="email" name="email" placeholder="Email" type="email">
                                                 </div>
                                                 <div class="button-box">
-                                                    <button class="register-btn btn" type="submit"><span>Đăng ký</span></button>
+                                                    <button type="submit" Value="Đăng ký" name="dangky" class="register-btn btn"><span>Đăng ký</span></button>
                                                 </div>
                                             </form>
                                         </div>
