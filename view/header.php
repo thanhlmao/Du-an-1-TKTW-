@@ -72,14 +72,41 @@
                                 </ul>
                             </div>
                         </div>
+                        
                         <div class="col-lg-6">
                             <div class="top-info-wrap text-end">
-                                <!-- <ul class="my-account-container">
-                                    <li><a href="my-account.html">My account</a></li>
-                                    <li><a href="index.php?act=viewcart">Giỏ hàng</a></li>
-                                    <li><a href="wishlist.html">Wishlist</a></li>
-                                    <li><a href="checkout.html">Thanh toán</a></li>
-                                </ul> -->
+                            <div class="main-menu-area white_text">
+                                <nav class="main-navigation text-center" style="margin-left: 400px;">
+                                <ul>
+                                    <?php
+                                    if(isset($_SESSION['user'])){
+                                            extract($_SESSION['user']);
+                                        ?>
+                                            <li><a href="#"><?php echo "Xin chào: " .$user ?><i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <!-- <li><a href="frequently-questions.html">FAQ</a></li> -->
+                                                <?php
+                                                if($vaitro == 1) { ?>
+                                                <li><a href="admin/index.php">Đăng nhập Admin</a></li>
+                                                <?php } ?>
+                                                <li><a href="index.php?act=dangxuat">Đăng xuất</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        
+                                        <?php
+                                        } else {
+                                        ?>
+                                            <li><a href="#"><?php echo "Tài khoản"?><i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.php?act=dangkydangnhap">login &amp; register</a></li>
+                                            </ul>
+                                        </li>
+                                        <?php } ?>
+                                    </ul>
+                                    
+                                </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -147,19 +174,7 @@
 
                                     </ul>              
                                 </div>
-                                <?php 
-                                        if(isset($_SESSION['user'])){
-                                            extract($_SESSION['user']);
-                                            echo "welcome ".$user;
-                                            if($vaitro == 1){
-                                                echo '<a href="admin/index.php">Đăng nhập Admin</a>';
-                                            }
-                                            echo '<a href="index.php?act=dangxuat">Đăng xuất</a>';
-                                        }
-                                        else {
-                                            echo "co cai nit";
-                                        }
-                                    ?>
+                                
                                 
                             
                         </div>
