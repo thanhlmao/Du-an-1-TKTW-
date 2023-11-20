@@ -67,5 +67,5 @@
         <a href="index.php?act=viewcart"><input type="button" class="btn btn-danger" value="Quay lại giỏ hàng"></a>
         </form>
     </article>
-    <?php include "./view/aside.php"; ?>
+   
 </div>

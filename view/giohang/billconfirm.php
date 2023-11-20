@@ -72,5 +72,5 @@
             ?>
          </h3>
  </article>
- <?php include "./view/aside.php"; ?>
+
         </div>
