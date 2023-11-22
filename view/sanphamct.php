@@ -97,34 +97,22 @@
                                 <div class="product_tab_content tab-pane" id="reviews" role="tabpanel">
                                     <div class="review_address_inner mt-30">
                                         <!-- Start Single Review -->
-                                        <div class="pro_review">
-                                            <div class="review_thumb">
-                                                <img alt="review images" src="assets/images/other/reviewer-60x60.jpg">
-                                            </div>
+                                        
+                                            
                                             <div class="review_details">
-                                                <div class="review_info mb-10">
-                                                    <ul class="product-rating d-flex mb-10">
-                                                        <li><span class="icon-star"></span></li>
-                                                        <li><span class="icon-star"></span></li>
-                                                        <li><span class="icon-star"></span></li>
-                                                        <li><span class="icon-star"></span></li>
-                                                        <li><span class="icon-star"></span></li>
-                                                    </ul>
-                                                    <h5>Admin - <span> November 19, 2019</span></h5>
+                                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                                                <script>
+                                                $(document).ready(function() {
 
-                                                </div>
-                                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-          <script>
-            $(document).ready(function() {
-
-              $("#binhluan").load("view/binhluan/formbinhluan.php", {
-                idsp: <?= $id ?>
-              });
-            });
-          </script>
+                                                $("#binhluan").load("view/binhluan/formbinhluan.php", {
+                                                    idsp: <?= $id ?>
+                                                });
+                                                });
+                                            </script>
+                                            <div class="card" id="binhluan">
          
                                             </div>
-                                        </div>
+                                        
                                         <!-- End Single Review -->
                                     </div>
                                     <!-- Start RAting Area -->

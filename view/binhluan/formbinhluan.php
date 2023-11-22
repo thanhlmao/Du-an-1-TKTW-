@@ -28,12 +28,13 @@ $listbl = loadall_bl($idsp);
                 echo '  <ul style="padding: 0px 30px; margin: 0px;">
                 <li>
                     <div class="flex-cmt">
+                        <div><span>'.$user.'</span></div>
                         <div class="content-cmt">
                             <span>'.$noidung.'
                             </span>
                         </div>
                         <div class="customer-cmt">
-                            <p><i>'.$iduser.',</i> <span>'.$ngaybl.'</span></p>
+                            <p> <span>'.$ngaybl.'</span></p>
                         </div>
                     </div>
                 </li>

@@ -5534,3 +5534,7 @@ img.mfp-img {
   font-weight: 600;
   text-transform: uppercase;
 }
+.flex-cmt{
+  display: flex;
+  justify-content: space-between;
+}

@@ -244,6 +244,7 @@
                             <!-- <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-heart"></i></button>
                                                 <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-magnifier icons"></i></button> -->
                         </div>
+                        
                     </div>
                 </div>
                 
