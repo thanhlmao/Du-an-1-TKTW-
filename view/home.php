@@ -121,8 +121,7 @@
                                                 <input type="hidden" name="anhsp" value="' . $anhsp . '">
                                                 <input type="hidden" name="giasp" value="' . $giasp . '">
                                                 <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-basket-loaded"></i></button>
-                                                <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-heart"></i></button>
-                                                <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-magnifier icons"></i></button>
+                                                
                                                 
                                             </form> 
                                     </div>
@@ -218,8 +217,7 @@
                                                 <input type="hidden" name="anhsp" value="' . $anhsp . '">
                                                 <input type="hidden" name="giasp" value="' . $giasp . '">
                                                 <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-basket-loaded"></i></button>
-                                                <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-heart"></i></button>
-                                                <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-magnifier icons"></i></button>
+                                               
                                                 
                                             </form>    
                                             </div>
@@ -243,7 +241,8 @@
                                     <!-- single-product-area end -->
                                 
                             </div>
-                            
+                            <!-- <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-heart"></i></button>
+                                                <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-magnifier icons"></i></button> -->
                         </div>
                     </div>
                 </div>

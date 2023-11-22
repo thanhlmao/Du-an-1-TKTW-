@@ -214,12 +214,12 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
         case 'lienhe':
             include "./view/lienhe.php";
             break;
-        case 'gopy':
-            include "./view/gopy.php";
+        case 'tintuc':
+            include "./view/tintuc.php";
             break;
-        case 'hoidap':
-            include "./view/hoidap.php";
-            break;
+        // case 'hoidap':
+        //     include "./view/hoidap.php";
+        //     break;
         default:
             include "./view/content.php";
             break;

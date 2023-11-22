@@ -46,6 +46,6 @@
     </div>
 </article>
 <?php 
-include "view/aside.php";
+// include "view/aside.php";
 ?>
 </div>

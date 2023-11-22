@@ -128,7 +128,7 @@
                             <div class="search-box-wrapper">
                                 <div class="search-box-inner-wrap">
                                     <form class="search-box-inner">
-                                        <div class="search-select-box">
+                                        <!-- <div class="search-select-box">
                                             <select class="nice-select">
                                                 <optgroup label=" Watch">
                                                     <option value="volvo">All</option>
@@ -139,7 +139,7 @@
                                                     <option value="mercedes">Womens tops</option>
                                                 </optgroup>
                                             </select>
-                                        </div>
+                                        </div> -->
                                         <div class="search-field-wrap">
                                             <input type="text" class="search-field" placeholder="Search product...">
 
@@ -168,7 +168,7 @@
                                         <li class="mini-cart-btns">
                                             <div class="cart-btns">
                                                 <a href="index.php?act=viewcart">Xem giỏ hàng</a>
-                                                <a href="checkout.html">Thanh toán</a>
+                                                <a href="index.php?act=bill">Thanh toán</a>
                                             </div>
                                         </li>
 
@@ -215,27 +215,13 @@
                                                     </ul>
                                                 </li>
                                                 
-                                                <li><a href="#">Shop Pages</a>
-                                                    <ul>
-                                                        <li><a href="error404.html">Error 404</a></li>
-                                                        <li><a href="compare.html">Compare Page</a></li>
-                                                        <!-- <li><a href="cart.html">Cart Page</a></li>
-                                                        <li><a href="checkout.html">Checkout Page</a></li>
-                                                        <li><a href="wishlist.html">Wish List Page</a></li> -->
-                                                    </ul>
-                                                </li>
+                                              
                                             </ul>
 
                                         </li>
-                                        <li><a href="blog.html">Tin tức <i class="fa fa-angle-down"></i></a>
+                                        <li><a href="index.php?act=tintuc">Tin tức <i class="fa fa-angle-down"></i></a>
 
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog Left Sidebar</a></li>
-                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                <!-- <li><a href="blog-grid.html">Blog Grid Page</a></li>
-                                                <li><a href="blog-largeimage.html">Blog Large Image</a></li>
-                                                <li><a href="blog-details.html">Blog Details Page</a></li> -->
-                                            </ul>
+                                          
                                         </li>
 
                                         <li><a href="#">Tài khoản<i class="fa fa-angle-down"></i></a>
@@ -246,7 +232,7 @@
                                             </ul>
                                         </li>
                                         <!-- <li><a href="about-us.html">About Us</a></li> -->
-                                        <li><a href="contact-us.html">Liên hệ</a></li>
+                                        <li><a href="index.php?act=lienhe">Liên hệ</a></li>
                                     </ul>
                                 </nav>
 
