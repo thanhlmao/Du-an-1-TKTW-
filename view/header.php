@@ -127,24 +127,17 @@
                         <div class="col-lg-6">
                             <div class="search-box-wrapper">
                                 <div class="search-box-inner-wrap">
-                                    <form class="search-box-inner">
-                                        <!-- <div class="search-select-box">
-                                            <select class="nice-select">
-                                                <optgroup label=" Watch">
-                                                    <option value="volvo">All</option>
-                                                    <option value="saab">Watch</option>
-                                                    <option value="saab">Air cooler</option>
-                                                </optgroup>
-                                                <optgroup label="Fashion">
-                                                    <option value="mercedes">Womens tops</option>
-                                                </optgroup>
-                                            </select>
+                                    <form class="search-box-inner" action="index.php?act=sanpham" method="post">
+                       
+                                        <!-- <input type="text" class="form-control" placeholder="Nhập từ khóa tìm kiếm" name="iptimkiem" />
+                                        <input type="submit" name="btntimkiem" value="Tìm kiếm" class="btn btn-primary ms-2">
                                         </div> -->
+                                
                                         <div class="search-field-wrap">
-                                            <input type="text" class="search-field" placeholder="Search product...">
+                                            <input type="text" class="search-field" placeholder="Search product..." name="iptimkiem">
 
                                             <div class="search-btn">
-                                                <button><i class="icon-magnifier"></i></button>
+                                                <button><i class="icon-magnifier" name="btntimkiem"></i></button>
                                             </div>
                                         </div>
 
@@ -154,29 +147,58 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="right-blok-box text-white d-flex">
-                               
+
                                 <div class="user-wrap">
-                                    <a href="wishlist.html"><span class="cart-total"></span> <i class="icon-heart"></i></a>
+                                    <a href="wishlist.html"><span class="cart-total">2</span> <i class="icon-heart"></i></a>
                                 </div>
 
                                 <div class="shopping-cart-wrap">
-                                    <a href="#"><i class="icon-basket-loaded"></i><span class="cart-total"></span></a>
-                                    
+                                    <a href="#"><i class="icon-basket-loaded"></i><span class="cart-total">2</span></a>
                                     <ul class="mini-cart">
-                                    <li class="cart-item">
-                            
+                                        <li class="cart-item">
+                                            <div class="cart-image">
+                                                <a href="product-details.html"><img alt="" src="assets/images/anh/get.webp"></a>
+                                            </div>
+                                            <div class="cart-title">
+                                                <a href="product-details.html">
+                                                    <h4>Product Name 01</h4>
+                                                </a>
+                                                <div class="quanti-price-wrap">
+                                                    <span class="quantity">1 ×</span>
+                                                    <div class="price-box"><span class="new-price">2,000,000 VND</span></div>
+                                                </div>
+                                                <a class="remove_from_cart" href="#"><i class="icon_close"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="cart-item">
+                                            <div class="cart-image">
+                                                <a href="product-details.html"><img alt="" src="assets/images/anh/get.png"></a>
+                                            </div>
+                                            <div class="cart-title">
+                                                <a href="product-details.html">
+                                                    <h4>Product Name 03</h4>
+                                                </a>
+                                                <div class="quanti-price-wrap">
+                                                    <span class="quantity">1 ×</span>
+                                                    <div class="price-box"><span class="new-price">1,000,000 VND</span></div>
+                                                </div>
+                                                <a class="remove_from_cart" href="#"><i class="icon-trash icons"></i></a>
+                                            </div>
+                                        </li>
+                                        <li class="subtotal-box">
+                                            <!-- <div class="subtotal-title">
+                                                <h3>Sub-Total :</h3><span>$ 260.99</span>
+                                            </div> -->
+                                        </li>
                                         <li class="mini-cart-btns">
                                             <div class="cart-btns">
                                                 <a href="index.php?act=viewcart">Xem giỏ hàng</a>
                                                 <a href="index.php?act=bill">Thanh toán</a>
                                             </div>
                                         </li>
-
-                                    </ul>              
+                                    </ul>
                                 </div>
-                                
-                                
-                            
+                            </div>
                         </div>
                         
                     </div>
@@ -224,13 +246,13 @@
                                           
                                         </li>
 
-                                        <li><a href="#">Tài khoản<i class="fa fa-angle-down"></i></a>
+                                        <!-- <li><a href="#">Tài khoản<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
-                                                <!-- <li><a href="frequently-questions.html">FAQ</a></li> -->
+                                                <li><a href="frequently-questions.html">FAQ</a></li>
                                                 <li><a href="my-account.html">My Account</a></li>
                                                 <li><a href="index.php?act=dangkydangnhap">login &amp; register</a></li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                         <!-- <li><a href="about-us.html">About Us</a></li> -->
                                         <li><a href="index.php?act=lienhe">Liên hệ</a></li>
                                     </ul>

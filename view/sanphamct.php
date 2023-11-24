@@ -23,7 +23,7 @@
                                     <h3>'.$namesp.'</h3>
                                     
                                     <div class="price-box">
-                                        <span class="new-price">Giá : '.$giasp.' $</span>
+                                        <span class="new-price">Giá :' . number_format($giasp) . ' VNĐ </span>
                                         
                                     </div>
                                     
@@ -35,31 +35,32 @@
                                                     <input type="number" class="input-text" name="quantity" value="1" title="Qty">
                                                 </div>
                                             </div>
-                                            <button class="add-to-cart" type="submit">Add To Cart</button>
+                                            <button class="add-to-cart"name="addtocart" type="submit">Add To Cart</button>
                                         </form>
-                                    </div>
-                                    <ul class="single-add-actions">
+                                        
+                                      </div>
+                                        <ul class="single-add-actions">
                                         <li class="add-to-wishlist">
                                             <a href="wishlist.html" class="add_to_wishlist"><i class="icon-heart"></i> Add to Wishlist</a>
                                         </li>
                                         <li class="add-to-compare">
                                             <div class="compare-button"><a href="compare.html"><i class="icon-refresh"></i> Compare</a></div>
                                         </li>
-                                    </ul>
+                                        </ul>
                                     
-                                    <ul class="stock-cont">
+                                        <ul class="stock-cont">
                                         <li class="product-sku">Sku: <span>P006</span></li>
                                         <li class="product-stock-status">Categories: <a href="#">Butter & Eggs,</a> <a href="#">Cultured Butter</a></li>
                                         <li class="product-stock-status">Tag: <a href="#">Man</a></li>
-                                    </ul>
-                                    <div class="share-product-socail-area">
+                                        </ul>
+                                        <div class="share-product-socail-area">
                                         <p>Share this product</p>
                                         <ul class="single-product-share">
                                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                             <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                                         </ul>
-                                    </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -163,10 +164,12 @@
                                     </a>
                                     <div class="label-product label_new">New</div>
                                     <div class="action-links">
+                                    
                                         <a href="cart.html" class="cart-btn" title="Add to Cart"><i class="icon-basket-loaded"></i></a>
                                         <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
                                         <a href="#" class="quick-view" title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
                                     </div>
+                                    
                                     <ul class="watch-color">
                                         <li class="twilight"><span></span></li>
                                         <li class="pigeon"><span></span></li>
@@ -174,10 +177,10 @@
                                     </ul>
                                 </div>
                                 <div class="product-caption">
-                                    <h4 class="product-name"><a href="product-details.html">'.$namesp.'</a></h4>
+                                    <h4 class="product-name"><a href="'.$linksp.'">'.$namesp.'</a></h4>
                                     <div class="price-box">
-                                        <span class="new-price">$49.00</span>
-                                        <span class="old-price">$90.00</span>
+                                        <span class="new-price">Giá :' . number_format($giasp) . ' VNĐ</span>
+                                        
                                     </div>
                                 </div>
                             </div>

@@ -197,7 +197,7 @@
                                                             <input type="hidden" name="id" value="' . $id . '">
                                                             <input type="hidden" name="namesp" value="' . $namesp . '">
                                                             <input type="hidden" name="anhsp" value="' . $anhsp . '">
-                                                            <input type="hidden" name="giasp" value="' . $giasp . '">
+                                                            <input type="hidden" name="giasp" value="Giá :' . number_format($giasp) . ' VNĐ">
                                                             <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-basket-loaded"></i></button>
                                                             <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-heart"></i></button>
                                                             <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-magnifier icons"></i></button>
@@ -210,9 +210,9 @@
                                                             </ul>
                                                         </div>
                                                         <div class="product-caption">
-                                                            <h4 class="product-name"><a href="product-details.html">'.$namesp.'</a></h4>
+                                                            <h4 class="product-name"><a href="'.$linksp.'">'.$namesp.'</a></h4>
                                                             <div class="price-box">
-                                                                <span class="new-price">'.$giasp.'</span>
+                                                                <span class="new-price">Giá :' . number_format($giasp) . ' VNĐ</span>
                                                                 
                                                             </div>
                                                         </div>
@@ -247,7 +247,7 @@
                                                        
                                                         <h4><a href="'.$linksp.'" class="product-name">'.$namesp.'</a></h4>
                                                         <div class="price-box">
-                                                            <span class="new-price">'.$giasp.'</span>
+                                                            <span class="new-price">Giá :' . number_format($giasp) . ' VNĐ</span>
                                                            
                                                         </div>
 

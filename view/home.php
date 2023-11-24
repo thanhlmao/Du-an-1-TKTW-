@@ -118,7 +118,7 @@
                                     <form action="index.php?act=addtocart" method="post" class="action-links" >
                                                 <input type="hidden" name="id" value="' . $id . '">
                                                 <input type="hidden" name="namesp" value="' . $namesp . '">
-                                                <input type="hidden" name="anhsp" value="' . $anhsp . '">
+                                                <input type="hidden" name="anhsp" value="Giá :' . number_format($giasp) . ' VNĐ">
                                                 <input type="hidden" name="giasp" value="' . $giasp . '">
                                                 <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-basket-loaded"></i></button>
                                                 
@@ -134,8 +134,8 @@
                                 <div class="product-caption">
                                     <h4 class="product-name"><a href="'.$linksp.'">'.$namesp.'</a></h4>
                                     <div class="price-box">
-                                        <span class="new-price">'.$giasp.'</span>
-                                        <span class="old-price">$90.00</span>
+                                        <span class="new-price">Giá :' . number_format($giasp) . ' VNĐ</span>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@
                                 <a class="product-tab__link active" id="nav-featured-tab" data-bs-toggle="tab" href="#nav-featured" role="tab" aria-selected="true">Tất cả sản phẩm</a>
                             </li>
                             <li class="product-tab__item nav-item">
-                                <a class="product-tab__link" id="nav-new-tab" data-bs-toggle="tab" href="#nav-new" role="tab" aria-selected="false">Sản phẩm mới</a>
+                                <a class="product-tab__link" id="index.php?act=sanpham" data-bs-toggle="tab" href="" role="tab" aria-selected="false">Sản phẩm mới</a>
                             </li>
                             <li class="product-tab__item nav-item">
                                 <!-- <a class="product-tab__link" id="nav-bestseller-tab" data-bs-toggle="tab" href="#nav-bestseller" role="tab" aria-selected="false">Bestseller</a> -->
@@ -215,7 +215,7 @@
                                                 <input type="hidden" name="id" value="' . $id . '">
                                                 <input type="hidden" name="namesp" value="' . $namesp . '">
                                                 <input type="hidden" name="anhsp" value="' . $anhsp . '">
-                                                <input type="hidden" name="giasp" value="' . $giasp . '">
+                                                <input type="hidden" name="giasp" value="Giá :' . number_format($giasp) . ' VNĐ">
                                                 <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-basket-loaded"></i></button>
                                                
                                                 
@@ -230,8 +230,8 @@
                                         <div class="product-caption">
                                             <h4 class="product-name"><a href="'.$linksp.'">'.$namesp.'</a></h4>
                                             <div class="price-box">
-                                                <span class="new-price">'.$giasp.'</span>
-                                                <span class="old-price">$49.00</span>
+                                                <span class="new-price">Giá :' . number_format($giasp) . ' VNĐ</span>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -321,7 +321,7 @@
                                         <h3>Join Our <br><span>Newsletter Now</span></h3>
                                     </div> -->
                                 </div>
-
+<!-- 
                                 <div class="col-lg-5 col-md-7">
                                     <div class="newsletter-footer mb-30">
                                         <input type="text" placeholder="Your email address...">
@@ -329,7 +329,7 @@
                                             <button class="subscribe-btn">Tìm kiếm</button>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
