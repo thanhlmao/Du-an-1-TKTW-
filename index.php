@@ -58,6 +58,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 $user = $_POST['user'];
                 $password = $_POST['password'];
                 $email = $_POST['email'];
+            
                 insert_tk($user, $password, $email);
                 $notice = "Đăng ký thành công! Vui lòng đăng nhập";
             }
