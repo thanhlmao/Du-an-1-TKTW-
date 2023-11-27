@@ -4,11 +4,17 @@ function loadall_tk() {
     $listtk = pdo_query($sql);
     return $listtk;
 }
+
 function insert_tk($user, $password, $email)
 {
-    $sql = "INSERT INTO tai_khoan(user, password, email) values ('$user','$password','$email')";
-    pdo_execute($sql);
+    if(!pdo_check_user_exists($user)){
+        $sql = "INSERT INTO tai_khoan(user, password, email) values ('$user','$password','$email')";
+        pdo_execute($sql);
+        return true;
+    }
+    return false;
 }
+
 
 function check_user($user, $password)
 {

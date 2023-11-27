@@ -116,3 +116,11 @@ function pdo_execute_return_lastInsertId($sql){
         unset($conn);
     }
 }
+function pdo_check_user_exists($user){
+    $sql = "SELECT * FROM tai_khoan WHERE user = ?";
+    $conn = pdo_get_connection();
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$user]);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $row ? true : false;
+}

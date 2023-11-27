@@ -8,9 +8,7 @@ include "model/taikhoan.php";
 include "model/cart.php";
 $showlistdm = loadall_dm();
 include "view/header.php";
-// include "view/home.php";
 include "global.php";
-
 // kiểm tra session my cart đã tồn tại là 1 mảng chưa, nếu chưa thì khởi tạo 1 mảng mới
 if (!isset($_SESSION['mycart'])) $_SESSION['mycart'] = [];
 // gán 1 biến để trả về dữ liệu select từ modul sản phẩm
@@ -53,17 +51,20 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             break;
             
             // CONTROLLER ĐĂNG KÝ
-        case 'dangky':
-            if (isset($_POST['dangky']) && $_POST['dangky']) {
-                $user = $_POST['user'];
-                $password = $_POST['password'];
-                $email = $_POST['email'];
+            case 'dangky':
+                if (isset($_POST['dangky']) && $_POST['dangky']) {
+                    $user = $_POST['user'];
+                    $password = $_POST['password'];
+                    $email = $_POST['email'];
+                    if (insert_tk($user, $password, $email)){
+                        $notice = "Đăng ký thành công! Vui lòng đăng nhập";
+                    } else {
+                        $notice = "Tài khoản đã tồn tại! Vui lòng chọn tên đăng nhập khác";
+                    }
+                }
+                include "./view/taikhoan/dangkydangnhap.php";
+                break;
             
-                insert_tk($user, $password, $email);
-                $notice = "Đăng ký thành công! Vui lòng đăng nhập";
-            }
-            include "./view/taikhoan/dangkydangnhap.php";
-            break;
 
             // CONTROLLER ĐĂNG NHẬP
         case 'dangnhap':

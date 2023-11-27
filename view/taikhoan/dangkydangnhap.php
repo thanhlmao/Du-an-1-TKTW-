@@ -52,6 +52,9 @@
                                                     <button type="submit" Value="Đăng ký" name="dangky" class="register-btn btn"><span>Đăng ký</span></button>
                                                 </div>
                                             </form>
+                                            <?php
+                                                echo $notice
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
