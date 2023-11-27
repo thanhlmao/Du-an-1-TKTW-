@@ -2,6 +2,17 @@
 /**
  * Mở kết nối đến CSDL sử dụng PDO
  */
+function pdo_execute($sql){
+    global $conn;
+    try {
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        return $stmt;
+    } catch (PDOException $e) {
+        throw new Exception($e->getMessage());
+    }
+}
+
 function pdo_get_connection(){
     $dburl = "mysql:host=localhost;dbname=duan;charset=utf8";
     $username = 'root';
