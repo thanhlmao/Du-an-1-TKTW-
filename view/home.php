@@ -322,14 +322,7 @@
                                     </div> -->
                                 </div>
 
-                                <div class="col-lg-5 col-md-7">
-                                    <div class="newsletter-footer mb-30">
-                                        <input type="text" placeholder="Your email address...">
-                                        <div class="subscribe-button">
-                                            <button class="subscribe-btn">Tìm kiếm</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

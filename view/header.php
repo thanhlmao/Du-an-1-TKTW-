@@ -85,6 +85,7 @@
                                             <li><a href="#"><?php echo "Xin chào: " .$user ?><i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
                                                 <!-- <li><a href="frequently-questions.html">FAQ</a></li> -->
+                                                <li><a href="index.php?act=mytk">My Account</a></li>
                                                 <?php
                                                 if($vaitro == 1) { ?>
                                                 <li><a href="admin/index.php">Đăng nhập Admin</a></li>
@@ -194,6 +195,7 @@
                                             <div class="cart-btns">
                                                 <a href="index.php?act=viewcart">Xem giỏ hàng</a>
                                                 <a href="index.php?act=bill">Thanh toán</a>
+                                                <a href="index.php?act=mybill">Đơn hàng của tôi</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -224,7 +226,7 @@
 
                                         <li><a href="index.php?act=sanpham">Danh mục <i class="fa fa-angle-down"></i></a>
                                             <ul class="mega-menu">
-                                                <li><a href="#">Sản phẩm</a>
+                                                <li><a href="">Sản phẩm</a>
                                                     <ul>
                                                     <?php foreach ($showlistdm as $dm) {
                                                         extract($dm);

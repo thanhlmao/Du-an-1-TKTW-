@@ -29,14 +29,21 @@
                                     
     
                                     <div class="single-add-to-cart">
-                                        <form action="#" class="cart-quantity d-flex">
+                                        <form action="index.php?act=addtocart" method="post" class="cart-quantity d-flex">
+                                       
                                             <div class="quantity">
                                                 <div class="cart-plus-minus">
                                                     <input type="number" class="input-text" name="quantity" value="1" title="Qty">
                                                 </div>
                                             </div>
-                                            <button class="add-to-cart"name="addtocart" type="submit">Add To Cart</button>
-                                        </form>
+                                            <input type="hidden" name="id" value="' . $id . '">
+                                                    <input type="hidden" name="namesp" value="' . $namesp . '">
+                                                    <input type="hidden" name="anhsp" value="' . $anhsp . '">
+                                                    <input type="hidden" name="giasp" value="' . $giasp . '">
+                            
+                                                    <button class="addtocart" name="addtocart" value="Thêm vào giỏ hàng" type="submit">Add To Cart</button>
+                                        
+                                            </form>
                                         
                                       </div>
                                         <ul class="single-add-actions">
@@ -165,9 +172,17 @@
                                     <div class="label-product label_new">New</div>
                                     <div class="action-links">
                                     
-                                        <a href="cart.html" class="cart-btn" title="Add to Cart"><i class="icon-basket-loaded"></i></a>
-                                        <a href="wishlist.html" class="wishlist-btn" title="Add to Wish List"><i class="icon-heart"></i></a>
-                                        <a href="#" class="quick-view" title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="icon-magnifier icons"></i></a>
+                                    <div class="action-links">
+                                    <form action="index.php?act=addtocart" method="post" class="action-links" >
+                                                <input type="hidden" name="id" value="' . $id . '">
+                                                <input type="hidden" name="namesp" value="' . $namesp . '">
+                                                <input type="hidden" name="anhsp" value="' . $anhsp . '">
+                                                <input type="hidden" name="giasp" value="' . $giasp . '">
+                                                <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-basket-loaded"></i></button>
+                                                
+                                                
+                                            </form> 
+                                    </div>
                                     </div>
                                     
                                     <ul class="watch-color">

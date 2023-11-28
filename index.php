@@ -136,6 +136,9 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             session_destroy();
             header("location: index.php");
             break;
+            case 'mytk':
+                include "./view/taikhoan/mytk.php";
+                break;
 
             // CONTROLLER THÊM GIỎ HÀNG
         case 'addtocart':
