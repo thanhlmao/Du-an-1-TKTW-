@@ -5538,3 +5538,10 @@ img.mfp-img {
   display: flex;
   justify-content: space-between;
 }
+.row {
+  justify-content: center;
+}
+.mt-2 {
+  text-align: center;
+  margin-top: 0.5rem!important;
+}

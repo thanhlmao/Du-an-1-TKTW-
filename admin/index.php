@@ -92,16 +92,26 @@ if (isset($_GET['act'])) {
             $listdm = loadall_dm();
             $listsp = loadall_spp($kyw, $iddm, $page, $products_per_page);
             include "sanpham/list.php";
-            break;
-        
-        case "xoasp":
-            if (isset($_GET["id"]) && $_GET["id"] > 0) {
-                delete_sp($_GET['id']);
-            }
-            $listdm = loadall_dm();
-            $listsp = loadall_sp();
-            include "sanpham/list.php";
-            break;
+            break;     
+            case "xoasp":
+                if (isset($_GET["id"]) && $_GET["id"] > 0) {
+                    delete_sp($_GET['id']);
+                }
+                $listdm = loadall_dm();
+                $listsp = loadall_sp();
+                $total_products = count($listsp); // Assuming loadall_sp() returns an array of products
+                $products_per_page = 10; // Define products_per_page before using it
+                if ($products_per_page != 0) {
+                    $max_pages = ceil($total_products / $products_per_page);
+                } else {
+                    // Handle the case where products_per_page is zero to avoid division by zero
+                    // You can set max_pages to a default value or handle the error in a way that makes sense for your application
+                    $max_pages = 0;
+                }
+                include "sanpham/list.php";
+                break;
+            
+            
         case "suasp":
             if (isset($_GET["id"]) && $_GET["id"] > 0) {
                 $sp = loadone_sp($_GET["id"]);
