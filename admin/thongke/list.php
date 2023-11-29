@@ -21,9 +21,9 @@
               <td class="pb-3 pt-3">'.$madm.'</td>
               <td class="pb-3 pt-3">'.$tendm.'</td>
               <td class="pb-3 pt-3">'.$countsp.'</td>
-              <td class="pb-3 pt-3">$'.$maxgiasp.'</td>
-              <td class="pb-3 pt-3">$'.$mingiasp.'</td>
-              <td class="pb-3 pt-3">$'.$avggiasp.'</td>
+              <td class="pb-3 pt-3">'. number_format($maxgiasp).' VND</td>
+              <td class="pb-3 pt-3">'.number_format($mingiasp).'  VND</td>
+              <td class="pb-3 pt-3">'.number_format($avggiasp).'  VND</td>
             </tr>';
               }
               ?>

@@ -51,7 +51,7 @@
                 <td class="pb-3 pt-3"><input type="checkbox" name="" id=""></td>
                     <td class="pb-3 pt-3">' . $id . '</td>
                     <td class="pb-3 pt-3">' . $namesp . '</td>
-                    <td class="pb-3 pt-3">' . $giasp . '</td>
+                    <td class="pb-3 pt-3">' .number_format( $giasp ). ' VND</td>
                     <td class="pb-3 pt-3">' . $anhsp . '</td>
                     <td class="pb-3 pt-3">' . $luotxemsp . '</td>
                     <td class="td-opt pb-3 pt-3 col-sm-2">
