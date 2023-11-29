@@ -4,7 +4,7 @@
                     <div class="col-12">
                         <!-- breadcrumb-list start -->
                         <ul class="breadcrumb-list">
-                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="index.php">Trang chủ</a></li>
                             <li class="breadcrumb-item active">Tài khoản của tôi</li>
                         </ul>
                         <!-- breadcrumb-list end -->
