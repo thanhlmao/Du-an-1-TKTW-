@@ -71,21 +71,16 @@
       <input type="submit" class="btn btn-danger" value="Xóa các mục đã chọn">
       <a href="./index.php?act=addsp" class="btn btn-primary">Nhập thêm</a>
     </div>
-    <nav aria-label="...">
-      <ul class="pagination">
-        <li class="page-item disabled">
-          <span class="page-link">Previous</span>
-        </li>
-        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-        <li class="page-item " aria-current="page">
-          <span class="page-link">2</span>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
-      </ul>
-    </nav>
+    <nav aria-label="Page navigation">
+  <ul class="pagination">
+    <?php for ($i = 1; $i <=$max_pages; $i++): ?>
+    <li class="page-item <?= $i == $page ? 'active' : '' ?>">
+      <a class="page-link" href="index.php?act=listsp&page=<?= $i ?>"><?= $i ?></a>
+    </li>
+    <?php endfor; ?>
+  </ul>
+</nav>
+
   </div>
 
 </article>

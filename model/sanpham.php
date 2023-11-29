@@ -36,6 +36,25 @@ function loadall_sp($kyw = "", $iddm = 0)
     $listsp = pdo_query($sql);
     return $listsp;
 }
+function loadall_spp($kyw = '', $iddm = 0, $page = 1, $products_per_page = 10) {
+    $offset = ($page - 1) * $products_per_page;
+    $sql = "SELECT * FROM san_pham WHERE namesp like '%$kyw%' ";
+    if ($iddm > 0) {
+        $sql .= "AND iddm = $iddm ";
+    }
+    $sql .= "ORDER BY id desc LIMIT $offset, $products_per_page";
+    $listsp = pdo_query($sql);
+    return $listsp;
+}
+function count_sp($kyw = '', $iddm = 0) {
+    $sql = "SELECT COUNT(*) as total FROM san_pham WHERE namesp like '%$kyw%' ";
+    if ($iddm > 0) {
+        $sql .= "AND iddm = $iddm ";
+    }
+    $result = pdo_query_one($sql);
+    return $result['total'];
+}
+
 function loadone_sp($id)
 {
     $sql = "SELECT * FROM san_pham WHERE id=" . $id;
@@ -69,3 +88,9 @@ WHERE id= $id";
 
     pdo_execute($sql);
 }
+// phan trnag
+// function getTotalProducts() {
+//     $sql = "SELECT COUNT(*) as total FROM san_pham";
+//     $result = pdo_query($sql);
+//     return $result[0]['total'];
+// }

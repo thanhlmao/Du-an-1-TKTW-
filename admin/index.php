@@ -11,8 +11,7 @@ include "header.php";
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
     switch ($act) {
-
-            // CONTROLLER DANH MỤC
+            // CONTROLLER DANH MỤC   
         case "adddm":
             if (isset($_POST['btn_add']) && ($_POST['btn_add'])) {
                 $namedm = $_POST['namedm'];
@@ -66,7 +65,20 @@ if (isset($_GET['act'])) {
             $listdm = loadall_dm();
             include "sanpham/add.php";
             break;
+        // case "listsp":
+        //     if (isset($_POST['btn_search']) && ($_POST['btn_search'])) {
+        //         $kyw = $_POST['kyw'];
+        //         $iddm = $_POST['iddm'];
+        //     } else {
+        //         $kyw = '';
+        //         $iddm = 0;
+        //     }
+        //     $listdm = loadall_dm();
+        //     $listsp = loadall_sp($kyw, $iddm);
+        //     include "sanpham/list.php";
+        //     break;
         case "listsp":
+            $page = isset($_GET['page']) ? $_GET['page'] : 1;
             if (isset($_POST['btn_search']) && ($_POST['btn_search'])) {
                 $kyw = $_POST['kyw'];
                 $iddm = $_POST['iddm'];
@@ -74,10 +86,14 @@ if (isset($_GET['act'])) {
                 $kyw = '';
                 $iddm = 0;
             }
+            $products_per_page = 10; // Khai báo và gán giá trị cho biến này
+            $total_products = count_sp($kyw, $iddm);
+            $max_pages = ceil($total_products / $products_per_page);
             $listdm = loadall_dm();
-            $listsp = loadall_sp($kyw, $iddm);
+            $listsp = loadall_spp($kyw, $iddm, $page, $products_per_page);
             include "sanpham/list.php";
             break;
+        
         case "xoasp":
             if (isset($_GET["id"]) && $_GET["id"] > 0) {
                 delete_sp($_GET['id']);
@@ -149,10 +165,22 @@ if (isset($_GET['act'])) {
 
             // CONTROLLER BÌNH LUẬN
         case "dsbl":
+            $page = isset($_GET['page']) ? $_GET['page'] : 1;
+            if (isset($_POST['btn_search']) && ($_POST['btn_search'])) {
+                $kyw = $_POST['kyw'];
+                $iddm = $_POST['iddm'];
+            } else {
+                $kyw = '';
+                $iddm = 0;
+            }
+            $products_per_page = 10; // Khai báo và gán giá trị cho biến này
+            $total_products = count_sp($kyw, $iddm);
+            $max_pages = ceil($total_products / $products_per_page);
             $listbl = loadall_bl(0);
             $listsp = loadall_sp();
             include "binhluan/list.php";
             break;
+            
         case "xoabl":
             if (isset($_GET['id']) && $_GET['id'] > 0) {
                 $id = $_GET['id'];

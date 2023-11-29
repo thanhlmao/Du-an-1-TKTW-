@@ -27,6 +27,28 @@
             </tr>';
               }
               ?>
+              <?php 
+// Số lượng sản phẩm trên mỗi trang
+$limit = 10;
+
+// Xác định trang hiện tại
+$page = isset($_GET['page']) ? $_GET['page'] : 1;
+
+// Tính toán vị trí bắt đầu
+$start = ($page - 1) * $limit;
+
+// Chỉnh sửa truy vấn SQL
+$listtk = loadall_sp($start, $limit);
+
+// Tính tổng số trang
+$total_pages = ceil(getTotalProducts() / $limit);
+
+// Hiển thị các liên kết phân trang
+for ($i = 1; $i <= $total_pages; $i++) {
+    echo "<a href='list.php?page=$i'>$i</a> ";
+}
+?>
+
             </tbody>
           </table>
           <div class="wrap-btn" style="display: flex; justify-content: space-between">
