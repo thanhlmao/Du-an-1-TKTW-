@@ -76,9 +76,9 @@ function show_billct($listbill)
       <tr>
           <td><img src="' . $anhsp . '" alt="Ảnh sản phẩm" width="50px"></td>
           <td>' . $cart['namesp'] . '</td>
-          <td>' . $cart['giasp'] . ' VND</td>
+          <td>' . number_format($cart['giasp']) . ' VND</td>
           <td>' . $cart['soluong'] . '</td>
-          <td>' . $cart['thanhtien'] . ' VND</td>
+          <td>' .number_format( $cart['thanhtien']) . ' VND</td>
         </tr>
         </tbody> ';
 

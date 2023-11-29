@@ -51,19 +51,6 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6 col-sm-6">
-                            <div class="widget-footer mt-40">
-                                <h6 class="title-widget">Extras</h6>
-                                <ul class="footer-list">
-                                   
-                                    <li><a href="#">Concord History</a></li>
-                                    <li><a href="#">Client Feed</a></li>
-                                    <li><a href="about-us.html">About Us</a></li>
-                                    <li><a href="contact.html">Quick Contact</a></li>
-                                    <li><a href="blog.html">Blog Pages</a></li>
-                                </ul>
-                            </div>
-                        </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="widget-footer mt-40">
                                 <h6 class="title-widget">Get the app</h6>
