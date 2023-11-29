@@ -26,5 +26,4 @@ function loadall_bl($idsp) {
     return $listbl;
 }
 
-
 ?>
