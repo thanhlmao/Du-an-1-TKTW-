@@ -82,11 +82,11 @@
                                             <div class="filter-price-wapper">
 
                                                 <a class="add-to-cart-button" href="#">
-                                                    <span>FILTER</span>
+                                                    <span>Lọc</span>
                                                 </a>
                                                 <div class="filter-price-cont">
 
-                                                    <span>Price:</span>
+                                                    <span>Giá:</span>
                                                     <div class="input-type">
                                                         <input type="text" id="min-price" readonly="" />
                                                     </div>
@@ -104,18 +104,18 @@
 
                                 <!-- shop-sidebar start -->
                                 <div class="shop-sidebar mb-30">
-                                    <h4 class="title">Filter by Color</h4>
+                                    <h4 class="title">Lọc theo dung tích</h4>
 
                                     <ul class="category-widget-list">
-                                        <li><a href="#">Red (1)</a></li>
-                                        <li><a href="#">White (1)</a></li>
+                                        <li><a href="#">50 ml</a></li>
+                                        <li><a href="#">100 ml</a></li>
                                     </ul>
 
                                 </div>
                                 <!-- shop-sidebar end -->
 
                                 <!-- shop-sidebar start -->
-                                <div class="shop-sidebar mb-30">
+                                <!-- <div class="shop-sidebar mb-30">
                                     <h4 class="title">Product tags</h4>
 
                                     <ul class="sidebar-tag">
@@ -131,7 +131,7 @@
                                         <li><a href="#">handbag</a></li>
                                     </ul>
 
-                                </div>
+                                </div> -->
                                 <!-- shop-sidebar end -->
 
                             </div>
