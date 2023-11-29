@@ -37,7 +37,7 @@
           <td class="pb-3 pt-3">DAM-' . $id . '</td>
           <td class="pb-3 pt-3">'.$kh.'</td>
           <td class="pb-3 pt-3">'.$countsp.'</td>
-          <td class="pb-3 pt-3">'.$tongdonhang.'</td>
+          <td class="pb-3 pt-3">'.number_format($tongdonhang).' VND</td>
           <td class="pb-3 pt-3">'.$ngaydathang.'</td>
           <td class="pb-3 pt-3">'.$ttdh.'</td>
           <td class="td-opt pb-3 pt-3">

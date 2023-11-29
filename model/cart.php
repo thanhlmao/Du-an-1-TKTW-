@@ -38,9 +38,9 @@ function viewcart($colxoa)
       <tr>
           <td><img src="' . $anhsp . '" alt="Ảnh sản phẩm"     width="100px"></td>
           <td>' . $cart[1] . '</td>
-          <td>' . number_format ($cart[3]) . '</td>
+          <td>' . number_format ($cart[3]) . ' VND</td>
           <td>' . number_format($cart[4] ) . '</td>
-          <td>' . number_format( $thanhtien) . '</td>
+          <td>' . number_format( $thanhtien) . ' VND</td>
           <td>' . $xoasp_td . '</td>
         </tr>
         </tbody> ';
@@ -49,7 +49,7 @@ function viewcart($colxoa)
     }
 
     echo '  <tr>
-          <td colspan="6"><p class="ttt">Tổng thành tiền: <span class="text-danger">$' . number_format($tongtien)  . '</span></p>  </td>
+          <td colspan="6"><p class="ttt">Tổng thành tiền: <span class="text-danger">' . number_format($tongtien)  . ' VND</span></p>  </td>
         </tr>';
 }
 //func show bill chia tiết
@@ -76,9 +76,9 @@ function show_billct($listbill)
       <tr>
           <td><img src="' . $anhsp . '" alt="Ảnh sản phẩm" width="50px"></td>
           <td>' . $cart['namesp'] . '</td>
-          <td>' . $cart['giasp'] . '</td>
+          <td>' . $cart['giasp'] . ' VND</td>
           <td>' . $cart['soluong'] . '</td>
-          <td>' . $cart['thanhtien'] . '</td>
+          <td>' . $cart['thanhtien'] . ' VND</td>
         </tr>
         </tbody> ';
 
@@ -86,7 +86,7 @@ function show_billct($listbill)
     }
 
     echo '  <tr>
-          <td colspan="5"><p class="ttt">Tổng thành tiền: <span class="text-danger">$' . number_format($tongtien) . '</span></p>  </td>
+          <td colspan="5"><p class="ttt">Tổng thành tiền: <span class="text-danger">' . number_format($tongtien) . ' VND</span></p>  </td>
         </tr>';
 }
 function tongdonhang()

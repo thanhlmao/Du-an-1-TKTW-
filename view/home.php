@@ -134,8 +134,8 @@
                                 <div class="product-caption">
                                     <h4 class="product-name"><a href="'.$linksp.'">'.$namesp.'</a></h4>
                                     <div class="price-box">
-                                        <span class="new-price">'.number_format($giasp).'</span>
-                                        <span class="old-price">$90.00</span>
+                                        <span class="new-price">'.number_format($giasp).' VND</span>
+                                     
                                     </div>
                                 </div>
                             </div>
@@ -230,8 +230,8 @@
                                         <div class="product-caption">
                                             <h4 class="product-name"><a href="'.$linksp.'">'.$namesp.'</a></h4>
                                             <div class="price-box">
-                                                <span class="new-price">'.number_format($giasp). '</span>
-                                                <span class="old-price">$49.00</span>
+                                                <span class="new-price">'.number_format($giasp). ' VND</span>
+                                             
                                             </div>
                                         </div>
                                     </div>
@@ -322,14 +322,7 @@
                                     </div> -->
                                 </div>
 
-                                <div class="col-lg-5 col-md-7">
-                                    <div class="newsletter-footer mb-30">
-                                        <input type="text" placeholder="Your email address...">
-                                        <div class="subscribe-button">
-                                            <button class="subscribe-btn">Tìm kiếm</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

@@ -193,16 +193,17 @@
                                                                 <img class="primary-image" src="'.$anhmoi.'" alt="" >
                                                             </a>
                                                             <div class="label-product label_new">New</div>
-                                                            <form action="index.php?act=addtocart" method="post" class="action-links" >
-                                                            <input type="hidden" name="id" value="' . $id . '">
-                                                            <input type="hidden" name="namesp" value="' . $namesp . '">
-                                                            <input type="hidden" name="anhsp" value="' . $anhsp . '">
-                                                            <input type="hidden" name="giasp" value="Giá :' . number_format($giasp) . ' VNĐ">
-                                                            <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-basket-loaded"></i></button>
-                                                            <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-heart"></i></button>
-                                                            <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-magnifier icons"></i></button>
-                                                            
-                                                        </form>    
+                                                            <div class="action-links">
+                                    <form action="index.php?act=addtocart" method="post" class="action-links" >
+                                                <input type="hidden" name="id" value="' . $id . '">
+                                                <input type="hidden" name="namesp" value="' . $namesp . '">
+                                                <input type="hidden" name="anhsp" value="' . $anhsp . '">
+                                                <input type="hidden" name="giasp" value="' . $giasp . '">
+                                                <button type="submit" class="addtocart" name="addtocart" value="Thêm vào giỏ hàng"><i class="icon-basket-loaded"></i></button>
+                                                
+                                                
+                                            </form> 
+                                    </div>
                                                             <ul class="watch-color">
                                                                 <li class="twilight"><span></span></li>
                                                                 <li  class="portage"><span></span></li>
