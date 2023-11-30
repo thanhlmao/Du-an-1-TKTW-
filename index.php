@@ -141,19 +141,34 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 break;
 
             // CONTROLLER THÊM GIỎ HÀNG
-        case 'addtocart':
-            if (isset($_POST['addtocart']) && $_POST['addtocart']) {
-                $id = $_POST['id'];
-                $namesp = $_POST['namesp'];
-                $anhsp = $_POST['anhsp'];
-                $giasp = $_POST['giasp'];
-                $soluong = 1;
-                $thanhtien = $soluong * $giasp;
-                $spadd = [$id, $namesp, $anhsp, $giasp, $soluong, $thanhtien];
-                array_push($_SESSION['mycart'], $spadd);
-            }
-            include "view/giohang/viewcart.php";
-            break;
+            case 'addtocart':
+                if (isset($_POST['addtocart']) && $_POST['addtocart']) {
+                    $id = $_POST['id'];
+                    $namesp = $_POST['namesp'];
+                    $anhsp = $_POST['anhsp'];
+                    $giasp = $_POST['giasp'];
+                    $soluong = 1;
+                    $thanhtien = $soluong * $giasp;
+                    $spadd = [$id, $namesp, $anhsp, $giasp, $soluong, $thanhtien];
+            
+                    // Kiểm tra xem sản phẩm đã tồn tại trong mảng tạm thời chưa
+                    $check = false;
+                    foreach ($_SESSION['mycart'] as $key => $product) {
+                        if ($product[1] == $namesp) {
+                            // Tăng số lượng sản phẩm
+                            $_SESSION['mycart'][$key][4] += $soluong;
+                            $check = true;
+                            break;
+                        }
+                    }
+            
+                    if (!$check) {
+                        // Thêm sản phẩm mới vào mảng tạm thời
+                        array_push($_SESSION['mycart'], $spadd);
+                    }
+                }
+                include "view/giohang/viewcart.php";
+                break;
         case 'xoacart':
             if (isset($_GET['idcart'])) {
                 $idcart = $_GET['idcart'];

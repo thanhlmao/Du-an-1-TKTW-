@@ -27,7 +27,7 @@
                             <td>DAM-'.$id.'</td>
                             <td>'.$ngaydathang.'</td>
                             <td>'.$countsp.'</td>
-                            <td>'.$tongdonhang.'</td>
+                            <td>'.number_format( $tongdonhang).'VND</td>
                             <td>'.$ttdh.'</td>
                             <td><a href="'.$xoabill.'" class="btn-delete">Xóa</a></td>
                           </tr>';

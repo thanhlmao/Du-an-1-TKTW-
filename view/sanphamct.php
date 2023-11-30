@@ -10,7 +10,7 @@
                             <div class="product-large-slider">
                                 <div class="pro-large-img img-zoom">
                                     <img src="'.$anhsp.'" alt="product-details" />
-                                    <a href="assets/images/product/product-01.png" data-fancybox="images"><i class="fa fa-search"></i></a>
+                                    <a href="'.$anhsp.'" data-fancybox="images"><i class="fa fa-search"></i></a>
                                 </div>
                                 
                             </div>

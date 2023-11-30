@@ -25,10 +25,12 @@
         $xoabill = "index.php?act=xoabill&id=".$id;
         // nối chuỗi để in ra khách hàng;
         $kh = '
-                  <span class="fw-semibold">' . $user . '</span><br>
-                  ' . $email . ' <br>
-                  ' . $diachi . ' <br>
-                  ' . $sdt . ' 
+                  <span class="fw-semibold"> Tên :' . $user . '</span><br>
+                  <span class="fw-semibold">Email :' . $email . ' <br></span>
+                  <span class="fw-semibold">   Địa chỉ : ' . $diachi . ' <br></span>
+                  <span class="fw-semibold">SDT: ' . $sdt . ' <br></span>
+
+                  
                 ';
                 $countsp = loadall_cart_count($bill['id']);
                 $ttdh = get_ttdh($bill['trangthai']);
@@ -51,8 +53,8 @@
   </table>
   <div class="wrap-btn" style="display: flex; justify-content: space-between">
     <div class="form-group pb-4">
-      <input type="button" class="btn btn-success" value="Chọn tất cả">
-      <input type="button" class="btn btn-warning" value="Bỏ chọn tất cả">
+      
+      
       <input type="button" class="btn btn-danger" value="Xóa các mục đã chọn">
       <input type="button" class="btn btn-success" value="Nhập thêm">
     </div>
