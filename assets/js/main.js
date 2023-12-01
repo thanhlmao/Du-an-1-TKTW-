@@ -430,5 +430,8 @@ $.scrollUp({
     
 })(jQuery);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4f83051c4a55599f7311d8872df34694cbdeefaa
 
