@@ -70,7 +70,8 @@ function show_billct($listbill)
 </thead>';
     foreach ($listbill as $cart) {
         $anhsp = $img_path . $cart['anhsp'];
-        $tongtien += $cart['thanhtien'];
+        $thanhtien = $cart['giasp'] * $cart['soluong']; // Cập nhật cách tính thành tiền
+        $tongtien += $thanhtien;
         echo '
   <tbody>
       <tr>
@@ -78,7 +79,7 @@ function show_billct($listbill)
           <td>' . $cart['namesp'] . '</td>
           <td>' . number_format($cart['giasp']) . ' VND</td>
           <td>' . $cart['soluong'] . '</td>
-          <td>' .number_format( $cart['thanhtien']) . ' VND</td>
+          <td>' .number_format($thanhtien) . ' VND</td>
         </tr>
         </tbody> ';
 
@@ -89,6 +90,7 @@ function show_billct($listbill)
           <td colspan="5"><p class="ttt">Tổng thành tiền: <span class="text-danger">' . number_format($tongtien) . ' VND</span></p>  </td>
         </tr>';
 }
+
 function tongdonhang()
 {
     $tongtien = 0;

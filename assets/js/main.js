@@ -430,13 +430,5 @@ $.scrollUp({
     
 })(jQuery);
 
-<script>
-function updatePrice(input) {
-    var row = input.parentNode.parentNode;
-    var price = parseFloat(row.getElementsByClassName('price')[0].innerText);
-    var quantity = input.value;
-    var total = price * quantity;
-    row.getElementsByClassName('total')[0].innerText = total.toFixed(2);
-}
-</script>
+
 
