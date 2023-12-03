@@ -43,9 +43,18 @@
           <td class="pb-3 pt-3">'.$ngaydathang.'</td>
           <td class="pb-3 pt-3">'.$ttdh.'</td>
           <td class="td-opt pb-3 pt-3">
-              <a href="" class="btn-edit">Sửa</a>
+          <form action="index.php?act=updateStatus&id='.$id.'" method="post">
+          <select name="newStatus">
+              <option value="0">Đơn hàng mới</option>
+              <option value="2">Đang xử lý</option>
+              <option value="3">Đang giao hàng</option>
+              <option value="4">Đã giao hàng</option>
+          </select>
+          <input type="submit" value="Sửa">
+      </form>
               <a href="'.$xoabill.'" class="btn-delete">Xóa</a>
           </td>
+
           </tr>';
       }
       ?>

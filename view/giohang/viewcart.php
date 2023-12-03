@@ -1,3 +1,20 @@
+<script>
+document.querySelectorAll('.quantity').forEach(function(quantityInput) {
+    quantityInput.addEventListener('change', function(e) {
+        var quantity = e.target.value;
+        var unitPrice = e.target.parentElement.previousElementSibling.dataset.unitPrice;
+        var lineTotalElement = e.target.parentElement.nextElementSibling;
+        var lineTotal = quantity * unitPrice;
+        lineTotalElement.textContent = lineTotal.toLocaleString() + ' VND';
+
+        var total = Array.from(document.querySelectorAll('.line-total')).reduce(function(total, lineTotalElement) {
+            return total + parseInt(lineTotalElement.textContent.replace(/\D/g, ''));
+        }, 0);
+        document.querySelector('.total').textContent = total.toLocaleString() + ' VND';
+    });
+});
+</script>
+
 <div class="row">
 <article class="col-sm-9 mt-3">
     <div class="card">

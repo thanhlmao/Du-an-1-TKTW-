@@ -38,9 +38,9 @@ function viewcart($colxoa)
       <tr>
           <td><img src="' . $anhsp . '" alt="Ảnh sản phẩm"     width="100px"></td>
           <td>' . $cart[1] . '</td>
-          <td>' . number_format ($cart[3]) . ' VND</td>
-          <td>' . number_format($cart[4] ) . '</td>
-          <td>' . number_format( $thanhtien) . ' VND</td>
+          <td class="unit-price" data-unit-price="' . $cart[3] . '">' . number_format ($cart[3]) . ' VND</td>
+          <td><input type="number" class="quantity" value="' . $cart[4] . '" min="1"></td>
+          <td class="line-total">' . number_format( $thanhtien) . ' VND</td>
           <td>' . $xoasp_td . '</td>
         </tr>
         </tbody> ';
@@ -49,9 +49,10 @@ function viewcart($colxoa)
     }
 
     echo '  <tr>
-          <td colspan="6"><p class="ttt">Tổng thành tiền: <span class="text-danger">' . number_format($tongtien)  . ' VND</span></p>  </td>
+          <td colspan="6"><p class="ttt">Tổng thành tiền: <span class="text-danger total">' . number_format($tongtien)  . ' VND</span></p>  </td>
         </tr>';
 }
+
 //func show bill chia tiết
 function show_billct($listbill)
 {
@@ -177,4 +178,8 @@ function loadall_thongke()
     $sql .= " GROUP BY dm.id ORDER BY dm.id DESC";
     $listbill = pdo_query($sql);
     return $listbill;
+}
+function updateStatus($id, $newStatus) {
+    $sql = "UPDATE hoa_don SET trangthai = ? WHERE id = ?";
+    pdo_execute($sql, $newStatus, $id);
 }

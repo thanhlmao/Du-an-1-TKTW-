@@ -209,6 +209,16 @@ if (isset($_GET['act'])) {
             $listbill = loadall_bill_kyw($kyw, 0);
             include "donhang/list.php";
             break;
+        case 'updateStatus':
+            if(isset($_POST['newStatus']) && isset($_GET['id'])) {
+                $newStatus = $_POST['newStatus'];
+                $id = $_GET['id'];
+                updateStatus($id, $newStatus);
+            }
+            // Redirect back to the list
+            header("Location: index.php?act=dsdh");
+            break;
+                
 case 'xoabill': 
     if(isset($_GET['id'])) { 
         $id = $_GET['id'];
