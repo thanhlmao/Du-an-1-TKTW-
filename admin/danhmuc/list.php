@@ -22,7 +22,7 @@
 <td class="pb-3 pt-3">' . $namedm . '</td>
 <td class="td-opt pb-3 pt-3">
     <a href="' . $editdm . '" class="btn-edit">Sửa</a>
-    <a href="' . $deletedm . '" class="btn-delete">Xóa</a>
+    <a href="' . $deletedm . '" class="btn-delete" onclick="return confirm(\'Are you sure you want to delete this item?\')">Xóa</a>
 </td>
 </tr>';
             }

@@ -24,7 +24,7 @@
               <td class="pb-3 pt-3">'.$idsp.'</td>
               <td class="pb-3 pt-3">'.$ngaybl.'</td>
               <td class="td-opt pb-3 pt-3">
-                <a href="'.$xoabl.'" class="btn btn-danger">Xóa</a>
+                <a href="'.$xoabl.'" class="btn btn-danger"onclick="return confirm(\'Are you sure you want to delete this item?\')>Xóa</a>
               </td>
             </tr>';
             }

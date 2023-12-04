@@ -52,7 +52,7 @@
           </select>
           <input type="submit" value="Sửa">
       </form>
-              <a href="'.$xoabill.'" class="btn-delete">Xóa</a>
+              <a href="'.$xoabill.'" class="btn-delete"onclick="return confirm(\'Are you sure you want to delete this item?\')">Xóa</a>
           </td>
 
           </tr>';

@@ -56,7 +56,7 @@
                     <td class="pb-3 pt-3">' . $luotxemsp . '</td>
                     <td class="td-opt pb-3 pt-3 col-sm-2">
                         <a href="' . $suasp . '" class="btn-edit">Sửa</a>
-                        <a href="' . $xoasp . '" class="btn-delete">Xóa</a>
+                        <a href="' . $xoasp . '" class="btn-delete" onclick="return confirm(\'Are you sure you want to delete this item?\')">Xóa</a>
                     </td>
                </tr>';
       }
