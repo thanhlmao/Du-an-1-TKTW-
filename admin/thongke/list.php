@@ -41,13 +41,13 @@ $start = ($page - 1) * $limit;
 $listtk = loadall_sp($start, $limit);
 
 // Tính tổng số trang
-$total_pages = ceil(getTotalProducts() / $limit);
+// $total_pages = ceil(getTotalProducts() / $limit);
 
 // Hiển thị các liên kết phân trang
-for ($i = 1; $i <= $total_pages; $i++) {
-    echo "<a href='list.php?page=$i'>$i</a> ";
-}
-?>
+// for ($i = 1; $i <= $total_pages; $i++) {
+//     echo "<a href='list.php?page=$i'>$i</a> ";
+// }
+// ?>
 
             </tbody>
           </table>
