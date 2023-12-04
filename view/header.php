@@ -86,6 +86,7 @@
                                             <ul class="sub-menu">
                                                 <!-- <li><a href="frequently-questions.html">FAQ</a></li> -->
                                                 <li><a href="index.php?act=mytk">My Account</a></li>
+                                                <li><a href="index.php?act=capnhattk">Cập nhập tài khoản</a></li>
                                                 <?php
                                                 if($vaitro == 1) { ?>
                                                 <li><a href="admin/index.php">Đăng nhập Admin</a></li>
@@ -156,7 +157,7 @@
                                 <div class="shopping-cart-wrap">
                                     <a href="#"><i class="icon-basket-loaded"></i><span class="cart-total">2</span></a>
                                     <ul class="mini-cart">
-                                        <li class="cart-item">
+                                        <!-- <li class="cart-item">
                                             <div class="cart-image">
                                                 <a href="product-details.html"><img alt="" src="assets/images/anh/get.webp"></a>
                                             </div>
@@ -187,10 +188,10 @@
                                             </div>
                                         </li>
                                         <li class="subtotal-box">
-                                            <!-- <div class="subtotal-title">
+                                            <div class="subtotal-title">
                                                 <h3>Sub-Total :</h3><span>$ 260.99</span>
-                                            </div> -->
-                                        </li>
+                                            </div>
+                                        </li> -->
                                         <li class="mini-cart-btns">
                                             <div class="cart-btns">
                                                 <a href="index.php?act=viewcart">Xem giỏ hàng</a>

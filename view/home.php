@@ -46,7 +46,7 @@
                 <!-- Hero Content One End -->
             </div>
             <!-- Single Slide End -->
-            <div class="single-slide" style="background-image: url(assets/images/slider/anh3.jpg)">
+            <div class="single-slide" style="background-image: url(assets/images/slider/anh6.jpg)">
                 <!-- Hero Content One Start -->
                 <div class="hero-content-one container">
                     <div class="row">

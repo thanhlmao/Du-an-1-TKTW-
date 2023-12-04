@@ -26,11 +26,9 @@
           </div>
 
          <h3 class="notice-success" style="font-size: 17px; color: red; margin: 15px 10px;">
-         <?php 
-         if(isset($noticeerr) && ($noticeerr != "")) { 
-            echo $noticeerr;
-         } 
-         ?>
+         <?php if (isset($notice)) { ?>
+             <p><?php echo $notice; ?></p>
+        <?php } ?>
          </h3>
           <!-- <div class="img-login" style="text-align: center;">
               <img src="view/images/forgotpass.png" alt="" style="width: 500px; height: 500px; margin-top: 200px;" />

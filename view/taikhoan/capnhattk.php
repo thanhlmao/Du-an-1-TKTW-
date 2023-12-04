@@ -17,9 +17,9 @@
                 ?>
               <!-- form đăng nhập -->
               <div class="wrap-avtform">
-                  <div class="avatar-user">
+                  <!-- <div class="avatar-user">
                       <img src="" alt="avatar user image">
-                  </div>
+                  </div> -->
                   <form action="index.php?act=capnhattk" method="post" style="margin-left: 10px" class="form-main">
                       <div class="form-group mb-3">
                           <label for="exampleInputEmail1" style="font-weight: bold; margin-bottom: 10px">Tên đăng nhập</label>
@@ -62,11 +62,9 @@
                   </form>
               </div>
           </div>
-          <div class="img-login" style="text-align: center;">
-              <img src="view/images/update.png" alt="" style="width: 500px; height: 500px; margin-top: 200px;" />
-          </div>
+          
 
       </article>
 
-      <?php include "view/aside.php"; ?>
+    
   </div>
