@@ -53,7 +53,9 @@
                                                 </div>
                                             </form>
                                             <?php
-                                                echo $notice
+                                                if(isset($notice) && ($notice != "")) { 
+                                                    echo $notice;
+                                                 }
                                             ?>
                                         </div>
                                     </div>
