@@ -12,6 +12,7 @@
         <th></th>
         <th>Mã đơn hàng</th>
         <th>Khách hàng</th>
+        <th>SP đã đặt</th>
         <th>Số lượng hàng</th>
         <th>Tổng giá trị đơn hàng</th>
         <th>Ngày đặt hàng</th>
@@ -34,22 +35,26 @@
                 ';
                 $countsp = loadall_cart_count($bill['id']);
                 $ttdh = get_ttdh($bill['trangthai']);
-        echo '   <tr>
-          <td class="pb-3 pt-3"><input type="checkbox" name="" id=""></td>
-          <td class="pb-3 pt-3">DAM-' . $id . '</td>
-          <td class="pb-3 pt-3">'.$kh.'</td>
-          <td class="pb-3 pt-3">'.$countsp.'</td>
-          <td class="pb-3 pt-3">'.number_format($tongdonhang).' VND</td>
-          <td class="pb-3 pt-3">'.$ngaydathang.'</td>
-          <td class="pb-3 pt-3">'.$ttdh.'</td>
-          <td class="td-opt pb-3 pt-3">
-          <form action="index.php?act=updateStatus&id='.$id.'" method="post">
-          <select name="newStatus">
-              <option value="0">Đơn hàng mới</option>
-              <option value="2">Đang xử lý</option>
-              <option value="3">Đang giao hàng</option>
-              <option value="4">Đã giao hàng</option>
-          </select>
+                $product_names = get_product_name($bill['id']);
+                $product_name = implode(", ", $product_names);
+      
+                echo '   <tr>
+              <td class="pb-3 pt-3"><input type="checkbox" name="" id=""></td>
+              <td class="pb-3 pt-3">DAM-' . $id . '</td>
+              <td class="pb-3 pt-3">'.$kh.'</td>
+              <td>'. $product_name .  '<br></td>  
+              <td class="pb-3 pt-3">'.$countsp.'</td>
+              <td class="pb-3 pt-3">'.number_format($tongdonhang).' VND</td>
+              <td class="pb-3 pt-3">'.$ngaydathang.'</td>
+              <td class="pb-3 pt-3">'.$ttdh.'</td>
+              <td class="td-opt pb-3 pt-3">
+              <form action="index.php?act=updateStatus&id='.$id.'" method="post">
+              <select name="newStatus">
+                  <option value="0">Đơn hàng mới</option>
+                  <option value="2">Đang xử lý</option>
+                  <option value="3">Đang giao hàng</option>
+                  <option value="4">Đã giao hàng</option>
+              </select>
           <input type="submit" value="Sửa">
       </form>
               <a href="'.$xoabill.'" class="btn-delete"onclick="return confirm(\'Are you sure you want to delete this item?\')">Xóa</a>

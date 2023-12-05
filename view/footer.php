@@ -10,9 +10,9 @@
 
                                 <div class="footer-addres">
                                     <div class="widget-content mb--20">
-                                        <p>Address: 123 Main Street, Anytown, <br> CA 12345 - USA.</p>
+                                        <p>Dịa chỉ: Cao đăng FPT <br> Hà Nội</p>
                                         <p>Phone: <a href="tel:">(012) 800 000 789</a></p>
-                                        <p>Fax: <a href="tel:">(012) 800 888 789</a></p>
+                                        
                                         <p>Email: <a href="tel:">demo@hashthemes.com</a></p>
                                     </div>
                                 </div>
@@ -40,12 +40,12 @@
                         </div>
                         <div class="col-lg-2 col-md-6 col-sm-6">
                             <div class="widget-footer mt-40">
-                                <h6 class="title-widget">Information</h6>
+                                <h6 class="title-widget">Thông tin</h6>
                                 <ul class="footer-list">
                                     <li><a href="index.php">Home</a></li>
                                     <li><a href="about-us.html">About Us</a></li>
                                     <li><a href="contact.html">Quick Contact</a></li>
-                                    <li><a href="blog.html">Blog Pages</a></li>
+                                    <li><a href="index.php?act=tintuc">Tin tức</a></li>
                                     <!-- <li><a href="#">Concord History</a></li>
                                     <li><a href="#">Client Feed</a></li> -->
                                 </ul>
@@ -53,12 +53,11 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="widget-footer mt-40">
-                                <h6 class="title-widget">Get the app</h6>
-                                <p>GreenLife App is now available on Google Play & App Store. Get it now.</p>
-                                <!-- <ul class="footer-list">
+                               
+                                <ul class="footer-list">
                                     <li><img src="assets/images/brand/img-googleplay.jpg" alt=""></li>
                                     <li><img src="assets/images/brand/img-appstore.jpg" alt=""></li>
-                                </ul> -->
+                                </ul>
                             </div>
                         </div>
                     </div>
