@@ -183,3 +183,14 @@ function updateStatus($id, $newStatus) {
     $sql = "UPDATE hoa_don SET trangthai = ? WHERE id = ?";
     pdo_execute($sql, $newStatus, $id);
 }
+function get_product_name($idbill) {
+    $sql = "SELECT namesp FROM gio_hang WHERE idbill=" . $idbill;
+    $bill = pdo_query($sql);
+    $product_names = array(); // Khởi tạo mảng tên sản phẩm
+    if(count($bill) > 0) {
+        foreach($bill as $item) {
+            $product_names[] = $item['namesp']; // Thêm tên sản phẩm vào mảng
+        }
+    }
+    return $product_names;
+}

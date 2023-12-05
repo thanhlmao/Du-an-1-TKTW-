@@ -8,6 +8,7 @@
                   <tr>
                     <th>Mã đơn hàng</th>
                     <th>Thời gian đặt hàng</th>
+                    <th>Tên sản phẩm </th>
                     <th>Số lượng</th>
                     <th>Tổng giá trị đơn hàng</th>
                     <th>Trạng thái</th>
@@ -15,26 +16,29 @@
                   </tr>
                 </thead>
                 <tbody>
-                    <?php 
-                    if(is_array($listbill)) { 
-                        foreach($listbill as $bill) {
-                            extract ($bill);
-                            $xoabill = "index.php?act=xoabill&id=".$id;
-                            $ttdh = get_ttdh($bill['trangthai']);
-                            $countsp = loadall_cart_count($bill['id']);
-                            echo '  
-                            <tr>
-                            <td>DAM-'.$id.'</td>
-                            <td>'.$ngaydathang.'</td>
-                            <td>'.$countsp.'</td>
-                            <td>'.number_format( $tongdonhang).'VND</td>
-                            <td>'.$ttdh.'</td>
-                            <td><a href="'.$xoabill.'" class="btn-delete">Xóa</a></td>
-                          </tr>';
-                        }
-                    }
-                    ?>
-                
+                <?php 
+            if(is_array($listbill)) { 
+                foreach($listbill as $bill) {
+                    extract ($bill);
+                    $xoabill = "index.php?act=xoabill&id=".$id;
+                    $ttdh = get_ttdh($bill['trangthai']);
+                    $countsp = loadall_cart_count($bill['id']);
+                    $product_names = get_product_name($bill['id']);
+                    $product_name = implode(", ", $product_names); // Kết hợp tên sản phẩm thành chuỗi
+                    echo '  
+                    <tr>
+                    <td>DAM-'.$id.'</td>
+                    <td>'.$ngaydathang.'</td>
+                    <td>'. $product_name .  '<br></td> 
+                    <td>'.$countsp.'</td>
+                    <td>'.number_format($tongdonhang).'VND</td>
+                    <td>'.$ttdh.'</td>
+                    <td><a href="'.$xoabill.'" class="btn-delete">Xóa</a></td>
+                    </tr>';
+                }
+            }
+            ?>
+                            
                 </tbody>
         </table>
       </div>
