@@ -20,8 +20,8 @@
               echo '<tr>
               <td class="pb-3 pt-3">'.$id.'</td>
               <td class="pb-3 pt-3">'.$noidung.'</td>
-              <td class="pb-3 pt-3">'.$iduser.'</td>
-              <td class="pb-3 pt-3">'.$idsp.'</td>
+              <td class="pb-3 pt-3">'.$user.'</td>
+              <td class="pb-3 pt-3">'.$namesp.' </td>
               <td class="pb-3 pt-3">'.$ngaybl.'</td>
               <td class="td-opt pb-3 pt-3">
                 <a href="'.$xoabl.'" class="btn btn-danger"onclick="return confirm(\'Are you sure you want to delete this item?\')">Xóa</a>

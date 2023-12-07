@@ -17,7 +17,7 @@ function xoa_bl($id) {
     pdo_execute($sql);
 }
 function loadall_bl($idsp) { 
-    $sql = "SELECT binh_luan.*, tai_khoan.user FROM binh_luan JOIN tai_khoan ON binh_luan.iduser = tai_khoan.id WHERE 1";
+    $sql = "SELECT binh_luan.*, tai_khoan.user, san_pham.namesp FROM binh_luan JOIN tai_khoan ON binh_luan.iduser = tai_khoan.id JOIN san_pham ON binh_luan.idsp = san_pham.id WHERE 1";
     if($idsp > 0 )
         $sql .=" AND idsp='".$idsp."'";
     else

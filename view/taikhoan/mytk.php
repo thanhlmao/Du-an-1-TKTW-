@@ -26,7 +26,7 @@
                                     <div class="col-lg-3 col-md-12">
                                         <div class="d-single-info">
                                             <p class="user-name"> <span><?php echo "Xin chào: " .$user ?></span></p>
-                                            <p>(<?php echo "không phải: " . $user ?>)</p>
+                                            
                                             <a href="index.php?act=dangxuat"> Đăng xuất </a>
                                         </div>
                                     </div>
@@ -44,7 +44,7 @@
                                     </div>
                                     <div class="col-lg-2 col-md-12">
                                         <div class="d-single-info text-lg-center">
-                                            <a href="cart.html" class="view-cart"><i class="fa fa-cart-plus"></i>Xem giỏ hàng</a>
+                                            <a href="index.php?act=viewcart" class="view-cart"><i class="fa fa-cart-plus"></i>Xem giỏ hàng</a>
                                         </div>
                                     </div>
                                 </div>

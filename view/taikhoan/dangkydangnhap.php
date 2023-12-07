@@ -44,9 +44,9 @@
                                         <div class="login-register-form">
                                             <form action="index.php?act=dangky" method="post">
                                                 <div class="login-input-box">
-                                                    <input type="text" name="user" placeholder="User Name">
-                                                    <input type="password" name="password" placeholder="Password">
-                                                    <input type="email" name="email" placeholder="Email" type="email">
+                                                    <input type="text" name="user" placeholder="User Name"  required>
+                                                    <input type="password" name="password" placeholder="Password"  required>
+                                                    <input type="email" name="email" placeholder="Email" type="email"  required>
                                                 </div>
                                                 <div class="button-box">
                                                     <button type="submit" Value="Đăng ký" name="dangky" class="register-btn btn"><span>Đăng ký</span></button>

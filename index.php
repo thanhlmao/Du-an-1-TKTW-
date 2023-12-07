@@ -194,7 +194,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                     $sdt = $_POST['sdt'];
                     $email = $_POST['email'];
                     $pttt = $_POST['pttt'];
-                    $ngaydathang = date('h:i:sa d/m/Y');
+                    $ngaydathang = date(' d/m/Y');
                     $tongdonhang = tongdonhang();
                     $idbill = insert_bill($iduser, $user, $diachi, $sdt, $email, $pttt, $ngaydathang, $tongdonhang);
                 } else {

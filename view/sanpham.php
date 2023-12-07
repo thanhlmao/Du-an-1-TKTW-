@@ -12,61 +12,7 @@
                                     <h4 class="title">Danh mục : <strong><?= $namedm ?></strong></h4>
                                     <!-- category-sub-menu start -->
                                     <div class="category-sub-menu">
-                                        <!-- <ul>
-                                            <li class="has-sub"><a href="#">Sports Watches</a>
-                                                <ul>
-                                                    <li><a href="#">Watch men (3)</a></li>
-                                                    <li><a href="#">Sports Watches (4)</a></li>
-                                                    <li><a href="#">Watch Butter (4)</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-sub"><a href="#">Kitchen & Dining</a>
-                                                <ul>
-                                                    <li><a href="#">Watch Woman (2)</a></li>
-                                                    <li><a href="#">Watch (1)</a></li>
-                                                    <li><a href="#">Watch Raisins (1)</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-sub"><a href="#">Casual Watches (12)</a>
-                                                <ul>
-                                                    <li><a href="#">Watch Bag (4)</a></li>
-                                                    <li><a href="#">Hamburger (4)</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-sub"><a href="#">Dress Watches (8)</a>
-                                                <ul>
-                                                    <li><a href="#">Digital Watches</a></li>
-                                                    <li><a href="#">Sheep's meat (8)</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-sub"><a href="#">Kitchen & Dining (11)</a>
-                                                <ul>
-                                                    <li><a href="#">Digital (8)</a></li>
-                                                    <li><a href="#">Digital watch (8)</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-sub"><a href="#">Digital Watches (12)</a>
-                                                <ul>
-                                                    <li><a href="#">Digital Man (8)</a></li>
-                                                    <li><a href="#">Fusion Watch (8)</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-sub"><a href="#">Crystal Watches (7)</a>
-                                                <ul>
-                                                    <li><a href="#">Fusion Watch (8)</a></li>
-                                                    <li><a href="#">Sports's meat (8)</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-sub"><a href="#">watch series (0)</a>
-
-                                            </li>
-                                            <li class="has-sub"><a href="#">watch tnt (11)</a>
-                                                <ul>
-                                                    <li><a href="#">Sports (8)</a></li>
-                                                    <li><a href="#">Sheep's meat (8)</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul> -->
+                                      
                                     </div>
                                     <!-- category-sub-menu end -->
                                 </div>
@@ -112,27 +58,7 @@
                                     </ul>
 
                                 </div>
-                                <!-- shop-sidebar end -->
-
-                                <!-- shop-sidebar start -->
-                                <!-- <div class="shop-sidebar mb-30">
-                                    <h4 class="title">Product tags</h4>
-
-                                    <ul class="sidebar-tag">
-                                        <li><a href="#">accesories</a></li>
-                                        <li><a href="#">blouse</a></li>
-                                        <li><a href="#">clothes</a></li>
-                                        <li><a href="#">desktop</a></li>
-                                        <li><a href="#">digital</a></li>
-                                        <li><a href="#">fashion</a></li>
-                                        <li><a href="#">women</a></li>
-                                        <li><a href="#">men</a></li>
-                                        <li><a href="#">laptop</a></li>
-                                        <li><a href="#">handbag</a></li>
-                                    </ul>
-
-                                </div> -->
-                                <!-- shop-sidebar end -->
+                              
 
                             </div>
                         </div>

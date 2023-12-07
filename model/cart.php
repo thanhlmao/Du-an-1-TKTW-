@@ -125,9 +125,13 @@ function loadall_cart($idbill)
 }
 function loadall_cart_count($idbill)
 {
-    $sql = "SELECT * FROM gio_hang WHERE idbill=" . $idbill;
+    $sql = "SELECT soluong FROM gio_hang WHERE idbill=" . $idbill;
     $bill = pdo_query($sql);
-    return count($bill);
+    $total_quantity = 0;
+    foreach ($bill as $item) {
+        $total_quantity += $item['soluong'];
+    }
+    return $total_quantity;
 }
 function loadall_bill($iduser)
 {

@@ -3,7 +3,7 @@
             <div class="container">
                 <div class="row product-details-inner">
                     <div class="col-lg-5 col-md-6">
-                        <?php
+                        <?php          
                         extract($onesp);
                         $anhsp = $img_path . $anhsp;
                             echo '
@@ -54,7 +54,7 @@
                                             <div class="compare-button"><a href="compare.html"><i class="icon-refresh"></i> Compare</a></div>
                                         </li>
                                         </ul>
-                                    
+                                     
                                         <ul class="stock-cont">
                                         <li class="product-sku">Sku: <span>P006</span></li>
                                         <li class="product-stock-status">Categories: <a href="#">Butter & Eggs,</a> <a href="#">Cultured Butter</a></li>

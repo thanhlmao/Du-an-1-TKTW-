@@ -99,13 +99,12 @@ if (isset($_GET['act'])) {
                 }
                 $listdm = loadall_dm();
                 $listsp = loadall_sp();
-                $total_products = count($listsp); // Assuming loadall_sp() returns an array of products
-                $products_per_page = 10; // Define products_per_page before using it
+                $total_products = count($listsp); 
+                $products_per_page = 10; 
                 if ($products_per_page != 0) {
                     $max_pages = ceil($total_products / $products_per_page);
                 } else {
-                    // Handle the case where products_per_page is zero to avoid division by zero
-                    // You can set max_pages to a default value or handle the error in a way that makes sense for your application
+                    
                     $max_pages = 0;
                 }
                 include "sanpham/list.php";
